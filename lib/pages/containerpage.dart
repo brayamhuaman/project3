@@ -11,14 +11,13 @@ class ContainerPage extends StatelessWidget {
           width: 200.0,
           height: 200.0,
           alignment: Alignment.center,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.green,
-            borderRadius: BorderRadius.all(Radius.circular(100.0)),
-          
-          ),
-          child: const Text('Hello World'),
-        ),
-      ),
-    );
+            borderRadius: BorderRadius.only(topLeft:Radius.circular(30.0),
+            bottomLeft: Radius.circular(30.0),
+            )),
+          child: const Text('Hello World')),
+                  ),
+      );
   }
 }
